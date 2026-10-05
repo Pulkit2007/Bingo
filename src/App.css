@@ -1,0 +1,54 @@
+.main-component {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bingo-block {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: rgb(235, 228, 228);
+}
+
+.number {
+  border-radius: 4px;
+  border: 0px solid black;
+  font-size: 1.25rem;
+  color: rgb(30, 29, 29);
+  font-weight: 600;
+  background-color: rgb(185, 176, 176);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.new-game-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 0px 
+}
