@@ -1,12 +1,12 @@
 
 export default function Blocks(props){
-
-    const style = props.marked
-        ? { backgroundColor: "green", color: "white" }
-        : {};
-
     return(
-        <button className="number" style={style} onClick={props.onClick}>
+        <button
+            className={`number${props.marked ? " marked" : ""}`}
+            type="button"
+            disabled
+            aria-pressed={props.marked}
+        >
             {props.value}
         </button>
     )

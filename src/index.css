@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #8be8df;
+  background-image:
+    radial-gradient(#171717 1.5px, transparent 1.5px),
+    linear-gradient(120deg, #ff3f8e 0 18%, transparent 18% 82%, #f4d638 82%);
+  background-size: 22px 22px, 100% 100%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100dvh;
+}

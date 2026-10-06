@@ -35,4 +35,24 @@ function generateNumbers() {
     return array;
 }
 
+const generatedNumbers = new Set();
+
+export function generateRandomNumber() {
+    if (generatedNumbers.size === 25) {
+        throw new Error("All numbers from 1 to 25 have already been generated.");
+    }
+
+    let number;
+    do {
+        number = Math.floor(Math.random() * 25) + 1;
+    } while (generatedNumbers.has(number));
+
+    generatedNumbers.add(number);
+    return number;
+}
+
+export function resetRandomNumbers() {
+    generatedNumbers.clear();
+}
+
 export default generateNumbers;
